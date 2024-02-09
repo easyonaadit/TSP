@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    border: 2px solid black;
+    min-width: 90vw;
+    min-height: 80vh;
+
+}
+
+.node{
+    fill: rgba(39, 40, 40, 0.827);
+}
+
+#svg{
+    outline : 2px solid aqua;
+}
+
+.active-node{
+    fill: none;
+    fill: rgb(0, 0, 255);
+}
+
+.line{
+    stroke: rgba(39, 40, 40, 0.4);
+}
+
+.active-line{
+    stroke: rgb(0, 0, 255);
+    stroke-width: 5;
+}

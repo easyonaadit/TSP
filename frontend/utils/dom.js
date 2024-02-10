@@ -1,4 +1,7 @@
 const svg = document.getElementById('svg')
+let firstNode = 0
+let index = 0;
+let hashtable = []
 
 body.addEventListener('click', (e) => {
 

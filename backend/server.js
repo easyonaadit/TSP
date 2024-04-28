@@ -35,6 +35,13 @@ const server = http.createServer((req, res) => {
 
                 // console.log(req.url)
                 allPermutations = await findAllPermutations([...data.nodes], 1, data.nodes.length - 1, allPermutations)
+                // let temp2 = []
+                // for (let i = 1; i < data.nodes.length; i++) {
+                //     temp2[i] = data.nodes[i]
+                // }
+                // allPermutations = await findAllPermutations([...temp2], data.nodes.length)
+                // 
+
                 console.log("%call Permutations are ", '#0000ff', allPermutations)
 
                 res.statusCode = 200
@@ -149,6 +156,31 @@ const findAllPermutations = async (cities, start, end, allPermutations) => {
 
     return allPermutations
 }
+
+
+// const findAllPermutations = async (cities, n) => {
+//     if (n === 1) {
+//         return [cities.slice()];
+//     }
+
+//     const permutations = [];
+
+//     for (let i = 0; i < n; i++) {
+//         permutations.push(...(await findAllPermutations(cities, n - 1)));
+
+//         if (n % 2 === 0) {
+//             const temp = cities[i];
+//             cities[i] = cities[n - 1];
+//             cities[n - 1] = temp;
+//         } else {
+//             const temp = cities[0];
+//             cities[0] = cities[n - 1];
+//             cities[n - 1] = temp;
+//         }
+//     }
+
+//     return permutations;
+// };
 
 
 server.listen(PORT, () => {

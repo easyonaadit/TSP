@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    border: 2px solid black;
+    min-width: 90vw;
+    min-height: 80vh;
+
+}
+
+.node {
+    fill: rgba(39, 40, 40, 0.827);
+}
+
+#svg {
+    outline: 2px solid aqua;
+    /* background-color: black; */
+}
+
+.active-node {
+    fill: none;
+    fill: rgb(0, 0, 255);
+}
+
+.custom-line {
+    stroke: rgba(39, 40, 40, 0.15);
+    stroke-width: 0.2;
+}
+
+.line {
+    stroke: rgba(39, 40, 40, 0.4);
+    stroke-width: 1;
+}
+
+.active-line {
+    stroke: rgb(0, 0, 255);
+    stroke-width: 3;
+}
+
+.final-line {
+    stroke: aqua;
+    stroke-width: 5;
+}

@@ -9,7 +9,6 @@ async function bruteForceTSP(coordinates) {
         cities[i] = i;
     }
 
-    let allPermutations = []
 
     try {
         const permutationsResponse = await fetch('http://127.0.0.1:6788', {
